@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My GitHub Dashboard</title>
+<title>Bhimavaram Vari Sri Ananda Sai Charitable Trust</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <style>
-    body { font-family: Arial, sans-serif; margin:0; background: #f9f9f9; }
+    body { font-family: Arial, sans-serif; margin:0; background: #f9f9f9; color:#333; }
     header { text-align: center; padding: 50px; background: linear-gradient(to right, #4facfe, #00f2fe); color: white; }
     h1 { font-size: 2.5rem; }
-    section { padding: 40px; }
+    section { padding: 40px; max-width: 1000px; margin: auto; }
+    .mission, .activities, .gallery, .contact { margin-bottom: 50px; }
     .gallery { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
     .gallery img { border-radius: 10px; width: 300px; height: 200px; object-fit: cover; transition: transform 0.3s; }
     .gallery img:hover { transform: scale(1.05); }
@@ -21,46 +22,49 @@
 <body>
 
 <header class="animate_animated animate_fadeInDown">
-    <h1>🚀 Welcome to My GitHub Dashboard</h1>
-    <p>Showcasing projects, photos, and live stats</p>
+    <h1>🙏 Bhimavaram Vari Sri Ananda Sai Charitable Trust</h1>
+    <p>Serving Humanity with Compassion & Commitment</p>
 </header>
 
-<section>
-    <h2>📸 My Photo Gallery</h2>
-    <div class="gallery">
-        <img src="images/photo1.jpg" alt="Photo 1">
-        <img src="images/photo2.jpg" alt="Photo 2">
-        <img src="images/photo3.jpg" alt="Photo 3">
-    </div>
+<section class="mission">
+    <h2>🌟 Our Mission</h2>
+    <p>
+        Bhimavaram Vari Sri Ananda Sai Charitable Trust is committed to uplifting communities through education, healthcare, and social welfare initiatives. 
+        We believe in empowering the underprivileged, providing resources for growth, and spreading hope where it’s needed most.
+    </p>
 </section>
 
-<section>
-    <h2>📊 Live Sales Chart</h2>
-    <canvas id="salesChart" width="400" height="200"></canvas>
+<section class="activities">
+    <h2>💖 Our Activities</h2>
+    <ul>
+        <li>Providing educational assistance to underprivileged children.</li>
+        <li>Organizing medical camps and health awareness drives.</li>
+        <li>Distributing food, clothes, and essential supplies to needy families.</li>
+        <li>Supporting women empowerment and skill development programs.</li>
+        <li>Promoting environmental awareness and sustainable living.</li>
+    </ul>
+</section>
+
+<section class="gallery">
+    <h2>📸 Moments from Our Work</h2>
+    <img src="images/event1.jpg" alt="Trust Event 1">
+    <img src="images/event2.jpg" alt="Trust Event 2">
+    <img src="images/event3.jpg" alt="Trust Event 3">
+</section>
+
+<section class="contact">
+    <h2>📬 Contact Us</h2>
+    <p><strong>Address:</strong> Bhimavaram, West Godavari, Andhra Pradesh, India</p>
+    <p><strong>Email:</strong> info@anandasaicharitabletrust.org</p>
+    <p><strong>Phone:</strong> +91-98765-43210</p>
 </section>
 
 <section class="social">
-    <h3>Connect with me</h3>
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <h3>Connect with Us</h3>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
     <a href="#"><i class="fab fa-twitter"></i></a>
 </section>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-const ctx = document.getElementById('salesChart').getContext('2d');
-new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr'],
-        datasets: [{
-            label: 'Sales',
-            data: [12, 19, 3, 5],
-            backgroundColor: 'rgba(54, 162, 235, 0.7)'
-        }]
-    }
-});
-</script>
 
 </body>
 </html>
